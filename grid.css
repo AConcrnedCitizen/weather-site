@@ -1,0 +1,24 @@
+.item1 { grid-area: logo; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: test;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo logo main main menu menu'
+    'logo logo main main right right'
+    'logo logo main main right right'
+    'footer test main main right right';
+  gap: 10px;
+  background-color: #ffffff00;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(0,0, 0, 0);
+  padding: 20px 0;
+  font-size: 30px;
+}
