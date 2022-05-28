@@ -30,7 +30,7 @@
             if(mysqli_num_rows($result) > 0){
                 while($row = mysqli_fetch_array($result)){
                     echo "<tr>";
-                        echo "<td>" . $row[(date("d"))-1] . "</td>";
+                        $temperature = "<td>" . $row[(date("d"))-1] . "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
@@ -43,17 +43,14 @@
             echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
         }
 
-
         ?>
         
-
         <div class="grid-container">
             <div class="item1"><img src="images\BOMB.png" style="width: 45%;"></div>
-            <div class="item2"><h1>Temp</h1></div>
-            <div class="item3">Main</div>  
-            <div class="item4">Right</div>
-            <div class="item5">Footer</div>
-            <div class="item6">TESTs</div>
+            <div class="item2" style="font-size:100px;"><?=$temperature?></div>
+            <div class="item3">MinMax</div>  
+            <div class="item4">Humidity</div>
+            <div class="item5">Forecast</div>
           </div>
         
         </div>
