@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>BOMB</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
@@ -12,17 +12,7 @@
     <body>
         
     <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        
-        // Create connection
-        $conn = new mysqli($servername, $username, $password);
-        
-        // Check connection
-        if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-        }
+        require_once("config.php");
         
         $conn -> select_db("testsite");
         $sql = "SELECT * FROM temp";
@@ -46,7 +36,7 @@
         ?>
         
         <div class="grid-container">
-            <div class="item1"><img src="images\BOMB.png" style="width: 45%;"></div>
+            <div class="item1"><img src="./img/BOMB.png" style="width: 45%;"></div>
             <div class="item2" style="font-size:100px;"><?=$temperature?></div>
             <div class="item3">MinMax</div>  
             <div class="item4">Humidity</div>
