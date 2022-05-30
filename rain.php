@@ -1,12 +1,12 @@
 <?php
 
 $conn -> select_db("testsite");
-$sql = "SELECT * FROM humidity";
+$sql = "SELECT * FROM rain";
 if($result = mysqli_query($conn, $sql)){
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_array($result)){
             echo "<tr>";
-                $humid = "<td>" . $row[(date("d"))-1] . "</td>";
+                $rain = "<td>" . $row[(date("d"))-1] . "</td>";
             echo "</tr>";
         }
         echo "</table>";

@@ -23,13 +23,15 @@
     require_once("humidity.php");
     require_once("mintemp.php");
     require_once("maxtemp.php");
+    require_once("rain.php");
+    require_once("wind.php");
     ?>
 
     <div class="container">
         <div class="weather-side">
           <div class="weather-gradient"></div>
           <div class="date-container">
-            <h2 class="date-dayname">DAY OF WEEK</h2><span class="date-day">DATE</span><i class="location-icon" data-feather="map-pin"></i><span class="location">Canberra, ACT</span>
+            <h2 class="date-dayname"><?=date("D")?></h2><span class="date-day"><?=date("d M Y")?></span><i class="location-icon" data-feather="map-pin"></i><span class="location">Canberra, ACT</span>
           </div>
           <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
             <h1 class="weather-temp"><?= $temperature ?>°</h1>
@@ -40,20 +42,20 @@
           <div class="today-info-container">
             <img src="img/BOMB.png" alt="BOMB" class="today-info-img">
             <div class="today-info">
-              <div class="precipitation"> <span class="title">PRECIPITATION</span><span class="value">0 %</span>
+              <div class="precipitation"> <span class="title">RAINFALL</span><span class="value"><?=$rain." mm"?></span>
                 <div class="clear"></div>
               </div>
-              <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
+              <div class="humidity"> <span class="title">HUMIDITY</span><span class="value"><?=$humid.'%'?></span>
                 <div class="clear"></div>
               </div>
-              <div class="wind"> <span class="title">WIND</span><span class="value">0 km/h</span>
+              <div class="wind"> <span class="title">WIND</span><span class="value"><?=$windspeed." km/h ".$winddir?></span>
                 <div class="clear"></div>
               </div>
             </div>
           </div>
           <div class="week-container">
             <ul class="week-list">
-                <li></i><span class="day-name">Mon</span><span class="day-temp">29°C</span></li>
+              <li></i><span class="day-name">Mon</span><span class="day-temp">29°C</span></li>
               <li></i><span class="day-name">Tue</span><span class="day-temp">29°C</span></li>
               <li></i><span class="day-name">Wed</span><span class="day-temp">21°C</span></li>
               <li></i><span class="day-name">Thu</span><span class="day-temp">08°C</span></li>
