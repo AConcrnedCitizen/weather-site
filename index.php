@@ -8,6 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="grid.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
     </head>
     <body>
         
@@ -37,7 +40,7 @@
         
         <div class="grid-container">
             <div class="item1"><img src="./img/BOMB.png" style="width: 45%;"></div>
-            <div class="item2" style="font-size:100px;"><?=$temperature?></div>
+            <div class="item2"><?=$temperature?></div>
             <div class="item3">MinMax</div>  
             <div class="item4">Humidity</div>
             <div class="item5">Forecast</div>

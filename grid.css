@@ -2,14 +2,20 @@
 .item2 { grid-area: temp; }
 .item3 { grid-area: minmax; }
 .item4 { grid-area: humidity; }
-.item5 { grid-area: forecast; }
+.item5 { grid-area: day1; }
+.item6 { grid-area: day2; }
+.item7 { grid-area: day3; }
+.item8 { grid-area: day4; }
+.item9 { grid-area: day5; }
+.item10 { grid-area: day6; }
+.item11 { grid-area: day7; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'logo logo temp temp minmax'
-    'logo logo humidity humidity minmax'
-    'logo logo humidity humidity minmax'
+    'logo logo temp minmax minmax'
+    'logo logo humidity minmax minmax'
+    'logo logo humidity minmax minmax'
     'forecast forecast forecast forecast forecast';
   gap: 10px;
   background-color: #ffffff00;
@@ -19,5 +25,5 @@
 .grid-container > div {
   background-color: rgba(0,0, 0, 0);
   padding: 20px 0;
-  font-size: 60px;
+  font-size: 250%;
 }
