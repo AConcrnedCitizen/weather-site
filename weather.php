@@ -77,7 +77,7 @@ function getData($date, $var)
     <div class="info-side">
       <div class="today-info-container">
         <a href="index.php">
-          <img src="img\BOMB.png" class="today-info-img" alt="BOMB LOGO">
+          <img src="img\BOMB.png" class="today-info-img" class="logo" alt="BOMB LOGO">
         </a>
         <div class="today-info">
           <div class="precipitation"> <span class="title">RAINFALL</span><span class="value"><?= getData(date("j/05/Y"), "rainfall") ?> mm</span>
