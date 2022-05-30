@@ -1,4 +1,5 @@
-html{
+.page{
+    height: 100vh;
     background-image: linear-gradient(to bottom right,#2596ec, #0226c5);
 }
 

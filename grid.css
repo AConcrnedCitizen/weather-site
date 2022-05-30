@@ -7,8 +7,6 @@
 .item7 { grid-area: day3; }
 .item8 { grid-area: day4; }
 .item9 { grid-area: day5; }
-.item10 { grid-area: day6; }
-.item11 { grid-area: day7; }
 
 .grid-container {
   display: grid;
@@ -16,7 +14,7 @@
     'logo logo temp minmax minmax'
     'logo logo humidity minmax minmax'
     'logo logo humidity minmax minmax'
-    'forecast forecast forecast forecast forecast';
+    'day1 day2 day3 day4 day5';
   gap: 10px;
   background-color: #ffffff00;
   padding: 10px;
