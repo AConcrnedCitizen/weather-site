@@ -24,20 +24,47 @@
     require_once("mintemp.php");
     require_once("maxtemp.php");
     ?>
-    <div class="page">
-        <div class="grid-container">
-            <div class="item1"><img src="./img/BOMB.png" style="width: 45%;"></div>
-            <div class="item2"><?= $temperature ?>°</div>
-            <div class="item3"><?= $mintemp ?>° | <?= $maxtemp ?>°</div>
-            <div class="item4">Humidity</div>
-            <div class="item5">Tomorrow</div>
-            <div class="item6">Day2</div>
-            <div class="item7">Day3</div>
-            <div class="item8">Day4</div>
-            <div class="item9">Day5</div>
-        </div>
 
-    </div>
+    <div class="container">
+        <div class="weather-side">
+          <div class="weather-gradient"></div>
+          <div class="date-container">
+            <h2 class="date-dayname">DAY OF WEEK</h2><span class="date-day">DATE</span><i class="location-icon" data-feather="map-pin"></i><span class="location">Canberra, ACT</span>
+          </div>
+          <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+            <h1 class="weather-temp"><?= $temperature ?>°</h1>
+            <h3 class="weather-desc"><?= $mintemp ?>° | <?= $maxtemp ?>°</h3>
+          </div>
+        </div>
+        <div class="info-side">
+          <div class="today-info-container">
+            <img src="img/BOMB.png" alt="BOMB" class="today-info-img">
+            <div class="today-info">
+              <div class="precipitation"> <span class="title">PRECIPITATION</span><span class="value">0 %</span>
+                <div class="clear"></div>
+              </div>
+              <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
+                <div class="clear"></div>
+              </div>
+              <div class="wind"> <span class="title">WIND</span><span class="value">0 km/h</span>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+          <div class="week-container">
+            <ul class="week-list">
+                <li></i><span class="day-name">Mon</span><span class="day-temp">29°C</span></li>
+              <li></i><span class="day-name">Tue</span><span class="day-temp">29°C</span></li>
+              <li></i><span class="day-name">Wed</span><span class="day-temp">21°C</span></li>
+              <li></i><span class="day-name">Thu</span><span class="day-temp">08°C</span></li>
+              <li></i><span class="day-name">Fri</span><span class="day-temp">19°C</span></li>
+              <li></i><span class="day-name">Sat</span><span class="day-temp">19°C</span></li>
+              <li></i><span class="day-name">Sun</span><span class="day-temp">19°C</span></li>
+              <div class="clear"></div>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 
