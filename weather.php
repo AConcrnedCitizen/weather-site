@@ -13,6 +13,7 @@ if (isset($_GET['loc'])) {
 
 function getIcon()
 {
+  date_default_timezone_set("Australia/Sydney");
   if ((int) date("G") > 6 && (int) date("G") < 18) {
     echo "fa-solid fa-sun";
   } else {

@@ -57,6 +57,8 @@ function get_tables()
   <div class="container">
     <?php echo get_tables() ?>
     
+    <h1 style="text-align: center;margin-top: 39%;">Click on the logo, to return to this menu</h1>
+
 </body>
 
 </html>
